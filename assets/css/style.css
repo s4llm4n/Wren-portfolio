@@ -230,13 +230,14 @@ html {
 
 @keyframes slideIn {
   0% { transform: translateY(-100%); }
-  100% ( transform: translateY(0); )
+  100% { transform: translateY(0); }
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .nav-open-btn,
@@ -319,6 +320,44 @@ html {
   #HERO
 \*-----------------------------------*/
 
+.hero { padding-block-start: calc(var(--section-padding) + 160px); }
+
+.hero .container {
+  display: grid;
+  gap: 50px;
+}
+
+.hero-subtitle {
+  font-size: var(--fontSize-6);
+  font-weight: var(--weight-bold);
+}
+
+.hero .section-title { margin-block: 20px; }
+
+.hero .hero-text { margin-block-end: 40px; }
+
+.hero .input-wrapper:hover { box-shadow: var(--shadow-2); }
+
+.hero .input-wrapper {
+  position: relative;
+  padding: 10px;
+  padding-inline-start: 20px;
+  background-color: var(--bg-prussian-blue);
+  border-radius: var(--radius-6);
+  border: ipx solid var(--bg-carolina-blue);
+  display: flex;
+  justify-items: flex-end;
+  transition: var(--transition-1);
+}
+
+.hero .input-field { padding-inline-end: 5px; }
+
+.hero-banner {position: relative;}
+
+.hero-banner .w-100 {
+  max-width: max-content;
+  
+}
 
 
 
